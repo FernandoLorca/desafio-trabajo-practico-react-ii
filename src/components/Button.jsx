@@ -1,10 +1,15 @@
-const Button = ({ bgColor, text }) => {
+import { Link } from 'react-router-dom';
+
+const Button = ({ bgColor, text, clickFunction, id }) => {
   return (
-    <button
-      className={`${bgColor} text-sm text-white p-2 rounded hover:opacity-75`}
-    >
-      {text}
-    </button>
+    <Link to={`/pizza/${id}`}>
+      <button
+        className={`${bgColor} text-sm text-white p-2 rounded hover:opacity-75`}
+        onClick={clickFunction}
+      >
+        {text}
+      </button>
+    </Link>
   );
 };
 
