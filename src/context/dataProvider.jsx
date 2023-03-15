@@ -17,7 +17,7 @@ const DataProvider = ({ children }) => {
 
     try {
       // Realización solicitud http
-      fetch('public/pizzas.json')
+      fetch('pizzas.json')
         .then(response => {
           // Consulto si la respuesta es exitosa
           if (!response.ok) {

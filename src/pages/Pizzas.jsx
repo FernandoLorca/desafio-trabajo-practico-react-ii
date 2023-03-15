@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { DataContext } from '../../context/dataProvider';
+import { DataContext } from '../context/dataProvider';
 
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header/Header';
+import Navbar from '../components/Navbar';
+import Header from '../components/Header/Header';
 
 const Pizzas = () => {
   // Se usa el hook useContext para consumir el contexto creado en 'context/dataProvider'
@@ -17,7 +17,7 @@ const Pizzas = () => {
         {data.map(pizzas => (
           <div className="w-full border" key={pizzas.id}>
             <div className="w-full bg-black">
-              <img src={pizzas.img} alt={`Pizza ${pizzas.name}`} />
+              <img src={pizzas.img} alt={`PPizza ${pizzas.name}`} />
             </div>
             <div className="mx-3">
               <h3 className="py-3 text-xl font-bold border-b-2 border-slate-300">
