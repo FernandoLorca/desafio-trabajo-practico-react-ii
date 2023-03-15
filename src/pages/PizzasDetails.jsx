@@ -40,7 +40,7 @@ const PizzasDetails = () => {
             />
           </div>
           <div className="flex flex-col justify-center p-8 w-2/3">
-            <h1 className="py-5 border-b-2 border-slate-300 text-xl font-bold">
+            <h1 className="py-5 border-b-2 border-slate-300 text-4xl font-bold">
               {pizza.name.charAt(0).toUpperCase() + pizza.name.slice(1)}
             </h1>
             <p className="py-5 text-sm">{pizza.desc}</p>

@@ -51,6 +51,7 @@ const PizzasRender = () => {
                 text="Ver más 👀"
                 clickFunction={handleClickButton}
                 id={pizza.id}
+                path={`/pizza/${pizza.id}`}
               />
               <Button bgColor="bg-red-500" text="Añadir 🛒" />
             </div>
