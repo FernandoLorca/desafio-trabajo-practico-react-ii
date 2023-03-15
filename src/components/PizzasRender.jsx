@@ -49,7 +49,7 @@ const PizzasRender = () => {
               <Button
                 bgColor="bg-cyan-500"
                 text="Ver más 👀"
-                clickFunction={() => handleClickButton(pizza.id)}
+                clickFunction={handleClickButton}
                 id={pizza.id}
               />
               <Button bgColor="bg-red-500" text="Añadir 🛒" />

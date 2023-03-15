@@ -5,7 +5,7 @@ const Button = ({ bgColor, text, clickFunction, id }) => {
     <Link to={`/pizza/${id}`}>
       <button
         className={`${bgColor} text-sm text-white p-2 rounded hover:opacity-75`}
-        onClick={clickFunction}
+        onClick={() => clickFunction(id)}
       >
         {text}
       </button>
