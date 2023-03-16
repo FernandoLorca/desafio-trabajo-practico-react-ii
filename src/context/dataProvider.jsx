@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 
-// Creo el contexto y lo envolvemos en una constante. Se exporta para poder envolver el componente que necesite el contexto (Ej: main.jsx)
+// Creo el contexto y lo guardo en una constante. Se exporta para poder envolver el componente que necesite el contexto (Ej: main.jsx)
 export const DataContext = createContext();
 
 const DataProvider = ({ children }) => {

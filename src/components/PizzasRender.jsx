@@ -9,7 +9,9 @@ const PizzasRender = () => {
   const { data } = useContext(DataContext);
   const navigate = useNavigate();
 
-  const handleClickButton = pizzaId => navigate(`/pizza/${pizzaId}`);
+  const handleClickToPath = pizzaId => navigate(`/pizza/${pizzaId}`);
+
+  console.log(data);
 
   return (
     <div className="grid grid-cols-4 gap-5 py-5 px-10 justify-items-center">
@@ -49,7 +51,7 @@ const PizzasRender = () => {
               <Button
                 bgColor="bg-cyan-500"
                 text="Ver más 👀"
-                clickFunction={handleClickButton}
+                clickFunction={handleClickToPath}
                 id={pizza.id}
                 path={`/pizza/${pizza.id}`}
               />
