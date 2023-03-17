@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,8 +16,8 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink className="hover:underline hover:opacity-75" to="/cart">
-            Cart
+          <NavLink className="hover:underline hover:opacity-75" to="/carrito">
+            Carrito de compras
           </NavLink>
         </li>
       </ul>
